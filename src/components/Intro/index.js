@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { IntroContent, Panel, Pin, Wrapper } from './style'
 
 function Intro() {
-  const [show, setShow] = useState(true)
   const pinData=[
     {
       name:'Hotel',
-      top:'26%',
-      left:'49%'
+      top:'28%',
+      left:'50%'
     },{
       name:'Hospital',
       top:'10%',
@@ -15,21 +14,21 @@ function Intro() {
 
     },{
       name:'Dentist',
-      top:'32%',
-      left:'66%'
+      top:'55%',
+      left:'64%'
 
+    },{
+      name:'Commercial Offices',
+      top:'146px',
+      left:'540px'
     }
   ]
   return (
       <>
-        <IntroContent style={{height:'100vh'}} onClick={()=>setShow(false)}>
-          <div className='overlay'>
-           {show ? 
-               <img src='/images/source.png' alt="logo"/>
-            
-            :
-              pinData.map(pin=>(
-                <Wrapper style={{top:`${pin.top}`,left:`${pin.left}`}}>
+        <IntroContent>
+          <div className='overlay h-100'>
+           {pinData.map((pin,id)=>(
+                <Wrapper key={id} style={{top:`${pin.top}`,left:`${pin.left}`}}>
                     <Panel>{pin.name}</Panel>
                     <Pin></Pin>
                   </Wrapper>

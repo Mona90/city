@@ -2,32 +2,10 @@ import styled from "styled-components";
 
 export const IntroContent = styled.div
 `
-background-image:url('/images/source.jpg');
-background-position:center;
-background-size: cover;
-background-repeat:no-repeat;
-position:relative;
-.overlay{
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    z-index:1;
-    img{
-        width:25rem;
-        height:25rem;
-        position: relative;
-        top:50%;
-        left:50%;
-        transform:translate(-50%,-50%);
-    }
-    
-}
 `
 export const Wrapper = styled.div
 `
-position: relative;
+position: absolute;
 width: fit-content;
 
 `
