@@ -12,7 +12,6 @@ width: fit-content;
 export const Panel = styled.div
 `
     background: rgb(255, 255, 255) none repeat scroll 0% 0%;
-    color: rgb(0, 0, 0);
     z-index: 1;
     width: fit-content;
     white-space: nowrap;
@@ -27,6 +26,10 @@ export const Panel = styled.div
     border: 1px solid #FFF;
     border-radius: 4px;
     position:relative;
+    a{
+        color:#000;
+        text-decoration:none;
+    }
     &::after{
         content:'';
         position:absolute;
