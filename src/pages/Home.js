@@ -5,7 +5,54 @@ import SearchBar from '../components/SearchBar'
 
 function Home() {
   const [show, setShow] = useState(true)
+  const pinData=[
+    {
+      name:'Hotel',
+      top:'28%',
+      left:'50%'
+    },{
+      name:'Hospital',
+      top:'10%',
+      left:'62%'
 
+    },{
+      name:'Dentist',
+      top:'55%',
+      left:'64%'
+
+    },{
+      name:'Commercial Offices',
+      top:'146px',
+      left:'540px',
+    },{
+      name:'Poultry Farm',
+     top:'185px',
+     left:'190px',
+
+    },{
+      name:"Industrial Bakery",
+      top:'193px',
+      left:'398px',
+    },{
+      name: 'Meat Processor',
+      top:'296px',
+      left:'286px',
+ 
+    },{
+      name: 'Commercial Laundry',
+      top:'337px',
+      left:'369px',
+ 
+    },{
+      name:'Fast Food',
+      top:'366px',
+      left:'754px',
+    },{
+      name:'Supermarket',
+      top:'284px',
+      left:'953px'
+    }
+  ]
   return (
     <div >
       <img src='/images/source.jpg' style={styles.bgImage} alt='background'/>
@@ -16,7 +63,7 @@ function Home() {
       :
       <>
         <SearchBar/>
-        <Intro/>
+        <Intro data={pinData}/>
       </>
       }
     </div>
